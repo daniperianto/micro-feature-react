@@ -1,13 +1,13 @@
 
 import { Routes, Route } from "react-router-dom"
-import Wilayah from "./pages/wilayah";
+import WordScramble from "./pages/WordScramble";
 
 
 export default function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Wilayah />} />
+      <Route path="/" element={<WordScramble />} />
     </Routes>
   )
 
