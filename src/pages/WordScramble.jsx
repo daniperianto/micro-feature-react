@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function suffle(word: string) {
+function suffle(word) {
     const a = word.split(""),
         n = a.length;
 
