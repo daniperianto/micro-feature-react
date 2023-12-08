@@ -11,7 +11,7 @@ export default function App() {
     <Routes>
       <Route path="/products" element={<LandingPage />} />
       <Route path="/products/:id " element={<DetailProduct />} />
-      <Route path="/wilayah" element={<Wilayah />} />
+      <Route path="/" element={<Wilayah />} />
     </Routes>
   )
 
