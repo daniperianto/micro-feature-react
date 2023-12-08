@@ -23,7 +23,7 @@ export default function WordScramble() {
         setWord(e.target.value)
     }
 
-    const [result, setResult] = useState()
+    const [result, setResult] = useState('')
     const check = () => {
         console.log("check")
         if (words[index] == word) {
