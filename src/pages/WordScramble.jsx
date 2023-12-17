@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Back from "./back";
 
 function suffle(word) {
     const a = word.split(""),
@@ -34,13 +35,14 @@ export default function WordScramble() {
     } 
     
     return (
-        <div>
+        <div>    
             <div className="container p-5 mx-auto justify-content-center">
+                <Back />
                 <h1 className="text-center mb-2">Word Scramble Animal</h1>
                 <div className="p-3 w-50 mx-auto justify-content-center ">
                     <p className="fs-3">{randomWord}</p>
                     <textarea value={word} onChange={userWord} className="bg-white w-100 p-2 rounded fs-5 border border-black shadow-sm" style={{resize: "none"}} rows={1} />
-                    <button className="bg-black text-white px-3 py-1 rounded-5 mb-4 fw-bold fs-5 float-end" type="button" onClick={check}>Submit</button>
+                    <a className="bg-black text-white px-3 py-1 rounded-5 mb-4 fw-bold fs-5 float-end text-decoration-none" style={{cursor:"pointer"}} onClick={check}>Submit</a>
                     <p className="fs-3">{result}</p>
                 </div>
             </div>
